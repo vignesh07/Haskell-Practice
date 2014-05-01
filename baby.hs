@@ -16,3 +16,9 @@ addListElem x list = x : list  -- : is the singleton addition operator that adds
 
 -- when using ++ operator compiler iterates through every element of the list; use smaller list ++ larger list for faster performance
 -- instead of ++ use : for quick addition as there is no iteration
+
+-- !! what I am going to call the double bang operator takes a list as left parameter and an index as right parameter and pops 
+	--out (index+1)th element from the list example: [1,2,3,4] !! 2 will pop out the 3rd element which is 3; works on strings also
+
+-- comparison operator works on lists by comparing from first element till last and returning bool
+
