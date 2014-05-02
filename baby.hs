@@ -4,7 +4,7 @@ doubleUs x y = x*2 + y*2
 
 doubleUsUsingdoubleMe x y = doubleMe x + doubleMe y
 
-doubleSmallNumber x y = if x>y then doubleMe y else	doubleMe x
+doubleSmallNumber x y = if x>y then doubleMe y if x==y then doubleUs x y else	doubleMe x
 
 
 --can call functions from other functions only if they're defined withiin the same script 
@@ -21,4 +21,6 @@ addListElem x list = x : list  -- : is the singleton addition operator that adds
 	--out (index+1)th element from the list example: [1,2,3,4] !! 2 will pop out the 3rd element which is 3; works on strings also
 
 -- comparison operator works on lists by comparing from first element till last and returning bool
+
+
 
